@@ -11,15 +11,13 @@ public class Main {
 		Cliente cliente = new Cliente();
 		String Nome = input.nextLine();
 		cliente.setNome(Nome);
-		System.out.printf("O nome do Cliente é: %s%n%n", cliente.getNome());
-		
-		
+		System.out.printf("O nome do Cliente Ã©: %s%n%n", cliente.getNome());
+
 		System.out.println("Entre com o CPF:");
-		
-		
+
 		String Cpf = input.nextLine();
 		cliente.setCpf(Cpf);
-		System.out.printf("O CPF do Cliente é: %s%n%n", cliente.getCpf());
+		System.out.printf("O CPF do Cliente Ã©: %s%n%n", cliente.getCpf());
 		
 		Conta cc = new ContaCorrente(cliente);
 		Conta poupanca = new ContaPoupanca(cliente);
@@ -30,5 +28,5 @@ public class Main {
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
 	}
-
 }
+
